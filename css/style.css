@@ -63,6 +63,17 @@ a {
     background-position-y: center;
 }
 
+/* INDEX */
+.header-index {
+    padding-bottom: 300px;
+    background-image: url(https://media.timeout.com/images/100629741/image.jpg.wikimedia.org/wikipedia/commons/1/18/Rock_concert_in_black_and_white_%28Unsplash%29.jpg);
+    background-size: cover;
+    background-position-y: center;
+filter: grayscale(85%);
+
+}
+
+
 .header-bandas {
     display: flex;
     flex-direction: row;
@@ -291,13 +302,14 @@ a {
     border-radius: 15px;
 }
 
-/* FORMULARIO CONTACTO 2 */
+
 .container-form {
     background-color: rgb(238, 238, 238);
-    margin: auto;
+    margin: 50px auto;
     padding: 20px;
     border-radius: 15px;
     max-width: 800px;
+
 }
 
 /* FORMULARIO CONTACTO */
@@ -314,19 +326,44 @@ a {
     padding: 100px 0 100px 0;
 }
 
+.banner-sucursales{
+    display: flex;
+    margin-top: 40px;
+    margin-bottom: 40px;
+    flex-wrap: wrap;
+    justify-content: space-around;
+}
+
+.sucursal{
+    display: flex;
+    /* background-color: chartreuse; */
+    flex-direction: column;
+    align-items: center;
+    width: 20%;
+}
+.sucursal img{
+   width: 80px;
+}
+.sucursal h3{
+
+margin-top: 0 !important;
+ }
+ 
+
 .main-contacto h2 {
     text-align: center;
     margin-top: 30px;
 }
 
 .main-contacto h3 {
-    text-align: center;
+    text-align: left;
     margin: 65px 0 15px 0;
-    padding: 0 10px;
+
 }
 
 .main-contacto p {
-    margin: auto 25px 25px 25px;
+    margin: auto;
+    text-align: left;
 }
 
 /* FOOTER */
@@ -464,3 +501,7 @@ a {
 .navbar-toggler-icon {
     filter: invert(100%);
 }
+.nav-item:hover{
+    color: yellow;
+}
+
