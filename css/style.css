@@ -655,7 +655,8 @@ card-group-scroll {
     font-size: 24px;
     padding: 20px 0;
 }
-.textos-mejores-festivales{
+
+.textos-mejores-festivales {
     margin: 2em 4em;
     text-align: center;
 }
@@ -706,7 +707,12 @@ card-group-scroll {
     background-image: url(https://www.alpinehearingprotection.co.uk/cdn/shop/articles/bannerblogwebshopmuziek1_a02523f3-0426-4a67-9bf9-7c310aae843a.png?v=1665066849&width=1100);
 }
 
-.card-1 .textos , .card-2 .textos, .card-3 .textos, .card-4 .textos, .card-5 .textos, .card-6 .textos{
+.card-1 .textos,
+.card-2 .textos,
+.card-3 .textos,
+.card-4 .textos,
+.card-5 .textos,
+.card-6 .textos {
     height: 100%;
     color: white;
     /* FLEXBOX */
@@ -718,7 +724,7 @@ card-group-scroll {
     grid-template-rows: 1fr auto; */
 }
 
-.banner {    
+.banner {
     border-radius: 10px;
     text-align: center !important;
     padding: 20px;
@@ -726,7 +732,7 @@ card-group-scroll {
     background-position: center center;
     background-image: url(https://i.pinimg.com/originals/dc/48/bb/dc48bb6f79faf61a7ed3e20f42d60569.jpg);
     /* FLEXBOX */
-     display: flex;
+    display: flex;
     flex-direction: column;
     justify-content: space-between;
 }
@@ -753,4 +759,23 @@ card-group-scroll {
     border-radius: 100px;
     font-family: 'Roboto', sans-serif;
     cursor: pointer;
+}
+
+/* BUSCADOR DE LUGARES */
+
+.contenedor-buscador-lugares {
+    width: 100%;
+    height: 300px;
+    /* max-width: 1200px; */
+    margin: auto;
+    padding: 40px 0;
+    /* GRID */
+    display: grid;
+    grid-template-rows: 2fr 1fr 2fr;
+    background-image: url(../imgs/lugares/rockbands-wallpaper.jpg);
+}
+
+.contenedor-buscador-lugares .col {
+    /* background-color: red; */
+    margin: auto 5px;
 }
