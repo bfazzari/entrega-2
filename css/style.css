@@ -833,7 +833,8 @@ card-group-scroll {
 }
 
 .festival img {
-    max-width: 850px;
+    width: 100%;
+    max-width: 653px;
 }
 
 
@@ -852,9 +853,22 @@ card-group-scroll {
         margin: 0 50px;
 
     }
+    .lugares{
+        display: flex;
+        /* border: dotted green 2px; */
+        flex-wrap: nowrap;
+        padding: 0 100px 0 100px;
+        margin: 50px 0 0 0;
+        flex-direction: column;
+        align-items: center;
+    }
 }
 
 @media (max-width: 991px) {
+    .festival{
+            text-align: center;
+            margin: 80px auto 0 auto;
+    }
     .header {
         padding-bottom: 0px;
         /* background-image: none; */
@@ -887,6 +901,9 @@ card-group-scroll {
 }
 
 @media (max-width: 699px) {
+    .festival img {
+        max-width: 699px;
+    }
     .header {
         margin-top: 100px;
 
@@ -937,6 +954,28 @@ card-group-scroll {
     .contenedor-buscador-lugares {
         background-image: none;
     }
+    /* GRILLA */
+    .contenedor-top-5-places {
+        grid-template-columns: 1fr;
+        grid-template-rows: 1px 0.2fr 0.8fr 0.5fr 0.5fr 0.5fr 0.5fr 0.5fr 0.5fr;
+        grid-template-areas:
+        "textotop"
+        "logo"
+        "media"
+        "top1"
+        "top2"
+        "top3"
+        "top4"
+        "top5"
+        "footer";
+    }
+
+
+}
+@media (max-width: 550px){
+    .lugares img {
+        width: 100%;
+        max-width: 550px;
 }
 
 @media (max-width: 391px) {
@@ -989,5 +1028,22 @@ card-group-scroll {
 
     .contenedor-buscador-lugares {
         background-image: none;
+    }
+    .lugares{
+        display: none;
+    }
+    .contenedor-top-5-places {
+        grid-template-columns: 1fr;
+        grid-template-rows: 50px 0.2fr 0.8fr 0.5fr 0.5fr 0.5fr 0.5fr 0.5fr 0.5fr;
+        grid-template-areas:
+        "textotop"
+        "logo"
+        "media"
+        "top1"
+        "top2"
+        "top3"
+        "top4"
+        "top5"
+        "footer";
     }
 }
