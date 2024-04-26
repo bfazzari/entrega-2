@@ -158,6 +158,82 @@ a {
 }
 
 /* TOP 5 PLACES */
+.contenedor-top-5-places {
+    display: grid;
+    height: 100%;
+    grid-template-columns: 1fr 1fr 1fr 1fr;
+    grid-template-rows: 0.1fr 0.3fr 0.3fr 0.1fr;
+    grid-template-areas:
+        "textotop textotop textotop textotop"
+        "media logo top1 top2"
+        "media top3 top4 top5"
+        "media footer footer footer";
+    grid-gap: 0.5rem;
+    margin: 5em 25px 1em 25px;
+}
+
+.texto-top {
+    grid-area: textotop;
+    text-align: center;
+    margin-bottom: 10px;
+}
+
+.logo {
+    grid-area: logo;
+    position: relative;
+}
+
+.logo h1 {
+    text-align: center;
+    height: 50px;
+    right: 0;
+    bottom: 0;
+    left: 0;
+    top: 0;
+    margin: auto;
+    position: absolute;
+    font-size: 2em;
+    font-weight: 900;
+    color: black;
+
+}
+
+.t5p-media {
+    grid-area: media;
+}
+
+.top-1 {
+    grid-area: top1;
+}
+
+.top-2 {
+    grid-area: top2;
+}
+
+.top-3 {
+    grid-area: top3;
+}
+
+.top-4 {
+    grid-area: top4;
+}
+
+.top-5 {
+    grid-area: top5;
+}
+
+.contenedor-top-5-places .card {
+    max-width: 75%;
+    border-radius: 5px;
+    margin: 0 auto;
+    height: 100%;
+    box-shadow: 1px 5px 5px 0px rgba(0, 0, 0, 0.2);
+}
+
+.top-5-footer {
+
+    grid-area: footer;
+}
 
 .top5-places img {
     width: 200px;
@@ -746,6 +822,21 @@ card-group-scroll {
     margin: auto 5px;
 }
 
+/* FESTIVAL */
+.festival {
+    text-align: center;
+    margin: 25px auto;
+}
+
+.festival img:hover {
+    filter: invert(75%);
+}
+
+.festival img {
+    max-width: 850px;
+}
+
+
 /* MEDIA QUERIES */
 @media (max-width: 1290px) {
     .main-contacto p {
@@ -807,7 +898,7 @@ card-group-scroll {
 
     }
 
-    .textos-mejores-festivales h4{
+    .textos-mejores-festivales h4 {
         display: none;
     }
 
@@ -822,7 +913,8 @@ card-group-scroll {
         padding: 40px 0;
         gap: 20px;
     }
-    .contenedor-lugares .textos{
+
+    .contenedor-lugares .textos {
         height: 100%;
         color: white;
         display: flex;
@@ -832,14 +924,17 @@ card-group-scroll {
         transform: rotate(-90deg);
 
     }
-    .contenedor-lugares p{
-display: none;
+
+    .contenedor-lugares p {
+        display: none;
 
     }
-    .contenedor-grilla{
+
+    .contenedor-grilla {
         display: none;
     }
-    .contenedor-buscador-lugares{
+
+    .contenedor-buscador-lugares {
         background-image: none;
     }
 }
@@ -856,7 +951,7 @@ display: none;
 
     }
 
-    .textos-mejores-festivales h4{
+    .textos-mejores-festivales h4 {
         display: none;
     }
 
@@ -871,7 +966,8 @@ display: none;
         padding: 40px 0;
         gap: 20px;
     }
-    .contenedor-lugares .textos{
+
+    .contenedor-lugares .textos {
         height: 100%;
         color: white;
         display: flex;
@@ -881,14 +977,17 @@ display: none;
         transform: rotate(-90deg);
 
     }
-    .contenedor-lugares p{
-display: none;
+
+    .contenedor-lugares p {
+        display: none;
 
     }
-    .contenedor-grilla{
+
+    .contenedor-grilla {
         display: none;
     }
-    .contenedor-buscador-lugares{
+
+    .contenedor-buscador-lugares {
         background-image: none;
     }
 }
